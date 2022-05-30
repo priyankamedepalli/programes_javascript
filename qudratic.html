@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qudratic equation </title>
+</head>
+<body>
+    <script>
+        var root1, root2;
+        var a =Number(prompt("enter a number"));
+        var b =Number(prompt("enter another number"));
+        var c= Number(prompt("enter a number"));
+        var d= b*b-4*a*c;
+        if (d>0){
+            root1 = (-b+ Math.sqrt(d))/2*a;
+            root2 = (-b-Math.sqrt(d))/2*a;
+            console.log(root1);
+            console.log(root2);
+
+        }
+        else(d==0)
+        {
+            root1= root2= -b/(2*a);
+            console.log(root1,root2);
+        }
+    </script>
+</body>
+</html>
